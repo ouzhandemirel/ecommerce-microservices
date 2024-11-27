@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-OrderQueueConsumer-97f04382-b49c-44c3-a40b-b38640feb4a9</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DotNetCore.CAP" Version="8.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../StockService.Application/StockService.Application.csproj" />
+    <ProjectReference Include="../StockService.Domain/StockService.Domain.csproj" />
+    <ProjectReference Include="../StockService.Infrastructure/StockService.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
